@@ -1,0 +1,53 @@
+任务， 在线考试系统管理---用户信息模块
+
+子任务
+     用户信息注册
+     用户信息查询
+     用户信息删除
+     用户信息更新
+
+准备工作
+      1  创建用户信息表  users.frm     (第一永远建表)
+      create table users(
+
+        userId int primary key auto_increment,#用户编号
+        userName varchar(50),  #用户名称
+        password varchar(50), #用户密码
+        sex char(1),  #用户性别
+        email varchar(50) #用户邮箱
+      )
+
+      2 src下创建实体类
+
+
+      3src下  使用工具类，jdbc
+
+      4 在web下INF创建lib文件夹，存放mysql通过的jdbc实现的jar
+
+
+      任务：在线考试管理系统----试题信息管理模块
+
+      子任务：
+             添加试题
+             查询试题
+             删除试题
+             更新试题
+
+      准备工作
+             1 准备试题信息表：单选题，每道题有4个选项，一个正确答案
+             create table question(
+                  questionId int primary key auto_increment,
+                  title varchar(50),
+                  optionA varchar(20),
+                  optionB varchar(20),
+                  optionC varchar(20),
+                  optionD varchar(20),
+                  answer char(1)
+             )
+
+1 创建question考试
+
+
+
+
+
